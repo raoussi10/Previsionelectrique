@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+	worktree = G:/
+	bare = false
+[remote "origin"]
+	url = https://github.com/raoussi10/Previsionelectrique.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
