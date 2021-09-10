@@ -49,7 +49,7 @@
                    
                    </div>
         <div>
-                        @livewire('private-menu')
+                    
         </div>
         
     </body>
