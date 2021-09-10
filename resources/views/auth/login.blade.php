@@ -1,11 +1,11 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+           <!-- <x-jet-authentication-card-logo /> -->
+           <img src="{{ URL::to('/assets/img/1039.png') }}" style="border-radius:12px; height: 100px; width:150px" >
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
-
         @if (session('status'))
             <div class="mb-4 font-medium text-sm text-green-600">
                 {{ session('status') }}

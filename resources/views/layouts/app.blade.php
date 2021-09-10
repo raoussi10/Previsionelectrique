@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -21,7 +22,7 @@
     <body class="font-sans antialiased">
         <x-jet-banner />
 
-        <div class="min-h-screen bg-gray-100">
+        <div >
             @livewire('navigation-menu')
 
             <!-- Page Heading -->
@@ -42,5 +43,14 @@
         @stack('modals')
 
         @livewireScripts
+        <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
+                   
+                   <img src="http://www.one.org.ma/images/Banniere_accueil2019-695-132.gif" style="  margin-left: auto;margin-right: auto;" alt="test">
+                   
+                   </div>
+        <div>
+                        @livewire('private-menu')
+        </div>
+        
     </body>
 </html>
