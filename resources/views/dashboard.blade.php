@@ -1,13 +1,27 @@
 <x-app-layout>
+</x-app-layout>
 
-
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-     
+<head>
+    <!-- Bootstrap core CSS 
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet"/>
+    -->
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="{{ url('/lib/bootstrap/css/bootstrap.min.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url('/lib/font-awesome/css/font-awesome.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url('/css/zabuto_calendar.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url('/lib/gritter/css/jquery.gritter.css') }}" />
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" type="text/css" href="{{ url('/css/style.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url('/css/style-responsive.css') }}" />
+  <link  src="{{ url('/lib/chart-master/Chart.js') }}" />
+  <script src="{{ url('/lib/chart-master/Chart.js') }}"></script>
 
 
+
+<script src="{{ asset('js/app.js') }}"></script>
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
@@ -23,24 +37,22 @@
                         @endif
                     @endauth
                 </div>
+
             @endif
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+            
                
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                   
-                <img src="http://www.one.org.ma/images/Banniere_accueil2019-695-132.gif" style="  margin-left: auto;margin-right: auto;" alt="test">
-                
-                </div>
-                
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                    
+                
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
                             <div class="flex items-center">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
                                 <img src="{{ URL::to('/assets/img/img2.png') }}" style="border-radius:2px; height: 150px; width:200px" > </svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">PRODUCT GLOBALE</a></div>
+                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ url('/productionglobale') }}" class="underline text-gray-900 dark:text-white">PRODUCT GLOBALE</a></div>
                             </div>
 
                             <div class="ml-12">
@@ -98,7 +110,8 @@
         </div>
     </body>
 </html>
+    
 
 
-</x-app-layout>
+
     
